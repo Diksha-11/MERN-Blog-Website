@@ -22,3 +22,9 @@ Blog-Site has following features
 4. View, Edit, Delete, Update their blog posts 
 5. Blog Posts can have images
 6. Security Features such as without login user cannot access/view blog posts, Valid login credentials etc.
+
+## Getting Started with BlogSite
+1. Fork the repo and run the git clone <forked repo> command from your terminal
+2. cd into frontend and backend files and run the command npm install
+3. Run the server on port 5000
+4. Start the frontend file with commant : npm start
