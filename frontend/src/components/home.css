@@ -1,0 +1,292 @@
+/*@media (min-width: 768px) {
+    .showcase {
+      background-position: top;
+    }*/
+  
+    .showcase .showcase-overlay h1 {
+        font-size: 64px;
+      }
+    
+      .showcase .showcase-overlay h2 {
+        font-size: 18px;
+        font-family: 'Lobster', cursive;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Oleo Script Swash Caps', cursive;
+      }
+  
+      .showcase .showcase-overlay h1 {
+          font-size: 60px;
+          padding-bottom: 20px;
+          font-family: 'Lobster', cursive;
+          font-family: 'Montserrat', sans-serif;
+          font-family: 'Oleo Script Swash Caps', cursive;
+        }
+  
+        .showcase {
+          background-image: url("./images/icon.jpg")
+          no-repeat center/cover;
+          height: 600px;
+        
+          
+        }
+        
+        .showcase .showcase-overlay {
+        
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 720px;
+          text-align: center;
+          color: #060505;
+          background-color: rgba(0, 0, 0, 0.4);
+          padding-bottom: 20px;
+        }
+  
+        .destinations {
+          padding: 20px;
+          text-align: center;
+        }
+        
+        .destinations h3 {
+          font-size: 30px;
+          padding: 10px;
+          text-align: center;
+        }
+        
+        .destinations .grid div {
+          background-color: #f1f1f1;
+          margin-bottom: 30px;
+          padding: 20px;
+          border-radius: 10px;
+        }
+        
+        .destinations .grid div img {
+          border-radius: 10px;
+        }
+  
+        .destinations .grid  {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+        }
+      
+        .destinations .grid  div img .allspan{
+          height: 50px;
+          width: 40px;
+        }
+  
+
+
+
+
+
+
+
+
+        .courses .row {
+          align-items: stretch;
+        }
+        .courses .column {
+          box-shadow: 0 0.5rem 2.4rem 0.6rem rgba(0, 0, 0, 0.06);
+          border-radius: var(--border-radius-1);
+          display: flex;
+          flex-direction: column;
+        }
+        .courses .column > *:not(img) {
+          padding: 0 2rem;
+        }
+        .courses .column img {
+          border-radius: var(--border-radius-1) var(--border-radius-1) 0 0;
+          width: 100%;
+          height: 50%;
+          padding-bottom: 6px;
+          
+        }
+        .courses .column p {
+          text-align: center;
+          flex-grow: 1;
+          font-family: 'Lobster', cursive;
+          font-family: 'Montserrat', sans-serif;
+          font-family: 'Oleo Script Swash Caps', cursive;
+        }
+        .courses-btn {
+          display: flex;
+          justify-content: center;
+        }
+        .courses-btn .btn:hover {
+          color: var(--white-shade-1);
+          background-color: var(--base-shade-1);
+        }
+        .row {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 5rem;
+        }
+        .column {
+          width: 100%;padding: 1em;
+        }
+        .section-desc {
+          text-align: center;
+          margin: 2rem 0 6rem 0;
+          
+        }
+        *,
+        *:before,
+        *:after {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+        }
+        *:not(i) {
+          font-family: "Poppins", sans-serif;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media only screen and (max-width: 991px) {
+          html {
+            font-size: 56.25%;
+          }
+          .row {
+            flex-direction: column;
+          }
+          section,
+          footer {
+            padding: 7.5rem 5rem;
+          }
+          header {
+            padding: 2.2rem 5rem;
+          }
+          section.hero {
+            grid-template-columns: 1fr;
+            background: linear-gradient(
+              45deg,
+              rgb(var(--grad-color-1)),
+              rgb(var(--grad-color-2))
+            );
+          }
+          #header-shape {
+            display: none;
+          }
+          .hero-img {
+            grid-row: 1;
+          }
+          nav ul a,
+          nav a#logo {
+            color: var(--white-shade-1);
+          }
+          .hero-content h1,
+          .hero-content p {
+            text-align: center;
+          }
+          .hero-content h1 {
+            color: var(--white-shade-1);
+          }
+          .hero-content p {
+            color: var(--white-shade-2);
+          }
+          .hero-content .primary-btn {
+            background-color: var(--white-shade-1);
+            color: var(--base-shade-1);
+          }
+          .hero-content .secondary-btn {
+            color: var(--white-shade-1);
+            border-color: var(--white-shade-1);
+          }
+          .btn-container {
+            justify-content: center;
+          }
+          .download-app img {
+            width: 30%;
+          }
+          .app-feature div {
+            justify-content: center;
+          }
+          .app-feature p {
+            text-align: center;
+          }
+          .download-app a img {
+            width: 50%;
+          }
+        }
+        
+        @media only screen and (max-width: 767px) {
+          html {
+            font-size: 50%;
+          }
+          header {
+            padding: 2rem 4rem;
+          }
+          #ham-menu {
+            display: block;
+            color: var(--white-shade-1);
+          }
+          nav a#logo,
+          #ham-menu {
+            font-size: var(--heading-font-size-2);
+          }
+          nav ul {
+            background-color: var(--black-shade-1);
+            position: fixed;
+            left: -100vw;
+            top: 70.4px;
+            height: calc(100vh - 70.4px);
+            width: 100vw;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            transition: 1s;
+            gap: 0;
+          }
+          nav ul a {
+            font-size: var(--heading-font-size-3);
+          }
+          .sticky nav ul a {
+            color: var(--white-shade-1);
+          }
+          nav ul a:hover {
+            color: var(--base-shade-1);
+          }
+          #scroll-top {
+            height: 6rem;
+            width: 6rem;
+          }
+        }
+        @media only screen and (max-width: 575px) {
+          html {
+            font-size: 46.87%;
+          }
+          header {
+            padding: 2rem 3rem;
+          }
+          section,
+          footer {
+            padding: 7.5rem 3rem;
+          }
+          .features .column {
+            padding: 4rem 2rem;
+          }
+          nav ul {
+            top: 65.18px;
+            height: calc(100vh - 65.18px);
+          }
+        }
+        
