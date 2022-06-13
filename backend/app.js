@@ -6,6 +6,9 @@ import cors from "cors";
 
 
 const app = express()
+const Port = process.env.PORT || 5000
+const {MONGOURI} = require('./keys')
+//require('/keys')
 
 app.use(cors());
 app.use(express.json());
@@ -13,8 +16,8 @@ app.use("/api/user", router); //here giving url path e.g. http://localhost:5000/
 app.use("/api/blog", blogRouter);
 
 mongoose.connect(
-    'mongodb+srv://admin:diksha90096@cluster0.sewn6.mongodb.net/BlogApp?retryWrites=true&w=majority'
-).then(() => app.listen(5000)
+    MONGOURI
+).then(() => app.listen(Port)
 ).then(() =>
     console.log("Connected to Port!")
 ).catch((err) => console.log(err));
