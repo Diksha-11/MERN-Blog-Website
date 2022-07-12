@@ -35,13 +35,14 @@ export const addBlog = async (req, res, next) => {
         title, description, image, user
     });
 
-    try {
-        const session = await mongoose.startSession();
-        session.startTransaction();
+     try {//we can update denormalized data in multiple collections and easily undo or commit all the operations using abortTransaction() & commitTransaction() respectivly
+
+        const session = await mongoose.startSession();// start session return a promise which needs to use await.
+        session.startTransaction();// transerfing data between two bds
         await blog.save({ session });
         existingUser.blogs.push(blog);  // pushing blog of existing user to its respective blog array
         await existingUser.save({ session });
-        await session.commitTransaction();
+        await session.commitTransaction();// Stop and commit transection 
 
     } catch (err) {
         return res.status(500).json({ message: err });
